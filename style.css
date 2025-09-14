@@ -1,72 +1,114 @@
-/* Impostazioni base */
 body {
-font-family: 'Roboto', sans-serif;
-margin: 20px; /* il margine è lo spazio esterno */
-padding: 0; /* il padding è lo spazio interno */
-line-height: 1.6; /* altezza della linea */
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.container-fluid {
-background-color: #96c64e;
-padding: 10px;
-text-align: right; /* altri valori: left, right, justify */
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #00b60f, #96c64e);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
 }
 
-
-/* SEZIONI */
-section {
-padding: 40px 20px;
-margin-top: 30px;
-border-bottom: 1px solid #000000;
-}
-/* TITOLI */
-h1,h2{
-    text-align: center;
-    padding: 10px;
+.hero h1 {
+  font-size: 3rem;
 }
 
-/* PARAGRAFI */
-p {
-    margin: 1em 0; /* em è l'unità di misura relativa alla dimensione del font cioè 1em = 16px */
-    font-size: 15px;
-    text-align: left;
-    position: center;
+.hero h2 {
+  margin: 10px 0;
+  font-weight: 400;
 }
 
-
-/* LINK */
-a {
-    color: #0066cc;
-    transition: color 0.5s;
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
-
-
-.progress{
-    margin-top: 10px;
+/* ICONS */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* HEADER */
-header {
-    position: sticky; /* sticky permette di mantenere l'header visibile durante lo scroll */
-    top: 0; /* top specifica la distanza dal bordo superiore della pagina */
-    z-index:100; /* z-index specifica l'ordine di sovrapposizione degli elementi */
+.social-icons a {
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s, transform 0.2s;
 }
 
-/* MAIN */
+.social-icons a:hover {
+  color: #023e8a;
+  transform: scale(1.2);
+}
+
+/* MAIN container */
 main {
-    max-width: auto;
-    margin: auto; /* margin auto centra l'elemento verticalmente e orizzontalmente */
-    padding: 0px;
-    background-color: rgb(255, 255, 255);
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* FOOTER */
-footer {
-    background-color: #96c64e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em; /* em è l'unità di misura relativa alla dimensione del font */
+section {
+  margin-bottom: 60px;
+}
+
+/* CARD COMPETENZE */
+#competenze .card {
+  width: 200px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#competenze .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#competenze .card img {
+  height: 120px;
+  object-fit: contain;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+#competenze .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#competenze .progress {
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#competenze .progress-bar {
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 0.8rem;
+}
+
+/* Griglia responsive più compatta */
+@media (max-width: 992px) {
+  #competenze .row-cols-md-3 {
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #competenze .row-cols-md-3 {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #competenze .row-cols-1 {
+    row-gap: 15px;
+  }
 }

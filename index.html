@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,7 @@
   <!-- Stile personalizzato -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
@@ -31,7 +33,7 @@
       <a class="navbar-brand fw-bold" href="#">Parodi Mirko</a>
 
       <!-- Bottone hamburger -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,31 +53,31 @@
 
   <!-- HERO -->
   <!-- HERO -->
-<header class="hero">
-  <div class="container hero-content">
-    <div class="row align-items-center">
-      
-      <!-- Foto profilo -->
-      <div class="col-md-4 text-center mb-4 mb-md-0">
-        <img src="Immagini_sito/Immagine_profilo.jpg" alt="Foto profilo Mirko Parodi" class="profile-pic">
-      </div>
-      
-      <!-- Testo -->
-      <div class="col-md-8 text-center text-md-start">
-        <h1>Mirko Parodi</h1>
-        <h2>Sviluppatore Software .NET & Web Developer</h2>
-        <p>Disponibile da subito per nuove opportunità e collaborazioni.</p>
-        <div class="social-icons">
-          <a href="mailto:mirko.parodi.2002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="tel:+393476855142" title="Telefono"><i class="fas fa-phone"></i></a>
-          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="row align-items-center">
 
+        <!-- Foto profilo -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="Immagini_sito/Immagine_profilo.jpg" alt="Foto profilo Mirko Parodi" class="profile-pic">
+        </div>
+
+        <!-- Testo -->
+        <div class="col-md-8 text-center text-md-start">
+          <h1>Mirko Parodi</h1>
+          <h2>Sviluppatore Software .NET & Web Developer</h2>
+          <p>Disponibile da subito per nuove opportunità e collaborazioni.</p>
+          <div class="social-icons">
+            <a href="mailto:mirko.parodi.2002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+393476855142" title="Telefono"><i class="fas fa-phone"></i></a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
 
   <!-- MAIN -->
@@ -84,7 +86,8 @@
     <section id="chisono">
       <h1><i class="bi bi-person-vcard"></i> Chi sono</h1>
       <p>
-        Mi chiamo Mirko Parodi, ho 23 anni e sono in possesso di un diploma di Istituto Tecnico in Informatica e Telecomunicazioni,
+        Mi chiamo Mirko Parodi, ho 23 anni e sono in possesso di un diploma di Istituto Tecnico in Informatica e
+        Telecomunicazioni,
         oltre a un diploma ITS-ICT di V livello europeo EQF come Tecnico Superiore per i metodi e Tecnologie
         per lo sviluppo di sistemi software per l'industria 4.0.<br>
       </p>
@@ -99,7 +102,31 @@
             <img src="Immagini_sito/Its-ict.png" class="card-img-top" alt="ITS ICT">
             <div class="card-body">
               <h5 class="card-title">ITS-ICT Liguria</h5>
-              <p class="card-text">Diploma Tecnico Superiore ICT – Sviluppo software, web e sistemi distribuiti.</p>
+              <p class="card-text">Diploma Tecnico Superiore ICT – Sviluppo software, web e sistemi distribuiti.</p><br>
+
+              <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moduliIts" aria-expanded="false" aria-controls="moduliIts">
+                Principali materie/moduli fatte nei due anni
+              </button>
+
+              <div class="collapse mt-2" id="moduliIts">
+                <h5>Primo Anno</h5>
+                <ul>
+                  <li>esami PET e ECDL</li>
+                  <li>Standard e Qualità aziendali, Sicurezza sul lavoro</li>
+                  <li>Soft Skill</li>
+                  <li>Programmazione</li>
+                  <li>Reti e Sistemi Distribuiti</li>
+                  <li>Stage Aziendale Breve</li>
+                </ul>
+                <h5>Secondo Anno</h5>
+                <ul class="list-unstyled small">
+                  <li>Sviluppo Applicazioni Web e Mobile</li>
+                  <li>Progetto Industriale</li>
+                  <li>Stage Aziendale</li>
+                  <li>Preparazione all Esame Finale</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +135,30 @@
             <img src="Immagini_sito/cisco.png" class="card-img-top" alt="Cisco">
             <div class="card-body">
               <h5 class="card-title">Cisco Academy</h5>
-              <p class="card-text">Corso CCT IT Essentials: networking, troubleshooting, sistemi operativi, sicurezza.</p>
+              <p class="card-text">Corso CCT IT Essentials: networking, troubleshooting, sistemi operativi,
+                sicurezza.</p><br>
+              <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moduliCisco" aria-expanded="false" aria-controls="moduliCisco">
+                Principali moduli fatti del certificato
+              </button>
+              <div class="collapse mt-2" id="moduliCisco">
+                <ul>
+                  <li>Introduction to Personal Computer Hardware</li>
+                  <li>PC Assembly</li>
+                  <li>Advanced Computer Hardware</li>
+                  <li>Preventive Maintenance and Troubleshooting</li>
+                  <li>Networking Concepts</li>
+                  <li>Applied Networking</li>
+                  <li>Laptops and Other Mobile Devices</li>
+                  <li>Printers and Scanners</li>
+                  <li>Virtualization and Cloud Computing</li>
+                  <li>Windows Installation</li>
+                  <li>Windows Configuration</li>
+                  <li>Mobile, Linux and macOS Operating Systems</li>
+                  <li>Security</li>
+                  <li>The IT Professional</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +167,22 @@
             <img src="Immagini_sito/Aico.png" class="card-img-top" alt="AICA">
             <div class="card-body">
               <h5 class="card-title">AICA – ICDL</h5>
-              <p class="card-text">Certificazione ICDL Full Standard: competenze digitali professionali.</p>
+              <p class="card-text">Certificazione ICDL Full Standard: competenze digitali professionali.</p><br>
+              <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moduliAica" aria-expanded="false" aria-controls="moduliAica">
+                Principali moduli fatti del certificato
+              </button>
+              <div class="collapse mt-2" id="moduliAica">
+                <ul>
+                  <li>Computer Essentials</li>
+                  <li>Online Essentials</li>
+                  <li>Word Processing</li>
+                  <li>Spreadsheets</li>
+                  <li>IT Security</li>
+                  <li>Online Collaboration</li>
+                  <li>Presentation</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -127,6 +192,27 @@
             <div class="card-body">
               <h5 class="card-title">F:ire</h5>
               <p class="card-text">Moduli principali: Sviluppatore Software .NET, Deploy Cloud e Concetti DevOps.</p>
+              <br>
+              <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moduliFIRE" aria-expanded="false" aria-controls="moduliFIRE">
+                Principali moduli fatti del certificato
+              </button>
+              <div class="collapse mt-2" id="moduliFIRE">
+                <ul>
+                  <li>Introduzione a C# e Visual Studio Code</li>
+                  <li>Sviluppo Front End</li>
+                  <li>Networking e Protocolli</li>
+                  <li>Sviluppo Web</li>
+                  <li>Persistenza Dati</li>
+                  <li>Dot Net Web App</li>
+                  <li>Sviluppo full stack</li>
+                  <li>Gestione delle Code nei Microservizi</li>
+                  <li>Depoly</li>
+                  <li>Containerizzazione e Orchestrazione</li>
+                  <li>Devops</li>
+                  <li>Stage</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -135,7 +221,20 @@
             <img src="Immagini_sito/scuola.jpg" class="card-img-top" alt="Istituto Primo Levi">
             <div class="card-body">
               <h5 class="card-title">Istituto Primo Levi</h5>
-              <p class="card-text">Diploma Istituto Tecnico indirizzo Informatica e Telecomunicazioni – Articolazione Telecomunicazioni.</p>
+              <p class="card-text">Diploma Istituto Tecnico indirizzo Informatica e Telecomunicazioni – Articolazione
+                Telecomunicazioni.</p><br>
+              <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moduliScuola" aria-expanded="false" aria-controls="moduliScuola">
+                Principali materie fatte per il diploma
+              </button>
+              <div class="collapse mt-2" id="moduliScuola">
+                <ul>
+                  <li>Informatica</li>
+                  <li>Telecomunicazioni</li>
+                  <li>Tecnologia e Progettazione di Sistemi Informatici di Telecomunicazione</li>
+                  <li>Sistemi e reti</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +242,7 @@
     </section>
 
     <!-- Competenze -->
-<section id="competenze">
+    <section id="competenze">
       <h1><i class="bi bi-tools"></i> Competenze</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
         <div class="col">
@@ -510,4 +609,5 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

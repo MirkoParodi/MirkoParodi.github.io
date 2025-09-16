@@ -120,6 +120,12 @@ section {
   line-height: 20px;
 }
 
+#formazione .card,
+#esperienze-lavorative .card {
+  max-width: 320px;   /* dimensione massima card */
+  margin: auto;       /* le centra dentro la colonna */
+}
+
 /* Griglia responsive più compatta */
 @media (max-width: 992px) {
   #competenze .row-cols-md-3 {
